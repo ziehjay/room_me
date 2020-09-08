@@ -1,5 +1,6 @@
 // allows us to write jsx code:
 import React from 'react';
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 // this will handle css code:
 import './Toolbar.css';
 // >
@@ -11,12 +12,14 @@ const toolbar = props => (
 
     <header className="toolbar">
         <nav className="toolbar__navigation">
-            <div></div>
+            <div>
+                <DrawerToggleButton click={props.drawerClickHandler}/>
+            </div>
             <div className="toolbar__logo"><a href="/">THE LOGO</a></div>
             <div className="spacer"/>
             <div className="toolbar_navigation-items">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li> 
                     <li><a href="/">Meine WG</a></li>
                     <li><a href="/">ToDo</a></li>
                     <li><a href="/">Einkaufen</a></li>
