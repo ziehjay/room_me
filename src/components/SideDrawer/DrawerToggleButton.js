@@ -4,7 +4,8 @@ import './DrawerToggleButton.css';
 
 // holds the click method!
 const drawerToggleButton = props => (
-    <button className="toggle-button" onClick={props.click}>
+    // onClick oder onMouseOver 
+    <button className="toggle-button" onMouseOver={props.click}>
         <div className="toggle-button__line"/>
         <div className="toggle-button__line"/>
         <div className="toggle-button__line"/>
